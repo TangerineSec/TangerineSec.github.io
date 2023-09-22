@@ -1,184 +1,867 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Stellar by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineBank</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</header>
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header class="sticky top-0 z-50">
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-color-white">Online</span>BankApp官网
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">主页</a></li>
+                    <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">公司特色</a></li>
+                    <li><a href="#testimonial" class="hover:text-color-secondary ease-in duration-200">开发者反馈</a>
+                    </li>
+                    <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">订阅价格</a></li>
+                    <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">公司博客</a></li>
+                    <li><a href="#download-app" class="hover:text-color-secondary ease-in duration-200">应用市场安装</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">联系我们</a></li>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
-						</ul>
-					</nav>
+                    <li><button
+                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">免费订阅新闻</button>
+                    </li>
+                </ul>
+            </div>
 
-				<!-- Main -->
-					<div id="main">
+            <!-- Mobile screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">主页</a></li>
+                    <li><a id="hLink" href="#features" class="hover:text-color-secondary ease-in duration-200">公司特色</a>
+                    </li>
+                    <li><a id="hLink" href="#testimonial"
+                            class="hover:text-color-secondary ease-in duration-200">开发者反馈</a></li>
+                    <li><a id="hLink" href="#pricing" class="hover:text-color-secondary ease-in duration-200">订阅价格</a>
+                    </li>
+                    <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">公司博客</a></li>
+                    <li><a id="hLink" href="#download-app"
+                            class="hover:text-color-secondary ease-in duration-200">应用市场安装</a></li>
+                    <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">联系我们</a>
+                    </li>
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Magna veroeros</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+                    <li><button class="btn">免费订阅新闻</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+    <main>
+        <section id="home" class="relative">
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+            <div class="blob1"></div>
 
-					</div>
+            <div class="blob2"></div>
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="title mb-4">功能强大的财务管理和银行管理应用</h1>
+                        <p class="leading-relaxed mb-10 font-serif">
+                            OnlineBankPro是一款旨在帮助用户有效地管理个人和家庭的财务事务。无论是跟踪支出、制定预算、管理银行账户还是进行投资，OnlineBankPro都提供了一系列的工具和功能，使用户能够轻松掌握他们的财务状况。程序.
+                        </p>
+                        <button class="btn">点击下载</button>
+                    </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+                    <div class="md:w-1/2">
+                        <img src="./img/hero4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <section id="features" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4 text-2xl">特色</h4>
+                    <h1 class="title">轻松管理你的财务与账单</h1>
+                </div>
 
-	</body>
+
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                    <!-- card no 1 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">个人财务管理</h3>
+                        <p class="leading-relaxed">
+                            OnlineBankPro提供了一个集中的平台，让用户能够跟踪和管理他们的支出、收入和资产。用户可以记录每笔交易，自动整理和分类消费数据，并生成清晰的图表和报告，以便更好地了解你们的财务状况。
+                        </p>
+                    </div>
+                    <!-- card no 2 -->
+                    <div
+                        class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-chart-column text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">预算规划</h3>
+                        <p class="leading-relaxed">
+                            应用程序允许用户设定个人预算，并实时监控我们的支出情况。FinancePro会提醒用户超出预算的情况，并提供针对性的建议和省钱技巧，帮助用户更好地控制开支。</p>
+                    </div>
+                    <!-- card no 3 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-phone text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">管理与支持 7/24</h3>
+                        <p class="leading-relaxed">FinancePro为用户提供了有关财务组合的实时数据和分析工具。用户可以追踪股票、基金和其他投资产品的表现</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="saving-money">
+            <div class="container py-20 relative">
+                <div class="blob1"></div>
+
+                <div class="blob2"></div>
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-12 md:w-1/2">
+                        <img src="./img/hero3.png" alt="">
+                    </div>
+
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h4 class="font-bold text-color-secondary mb-4 text-2xl">银行账户管理</h4>
+                        <h1 class="title mb-4">管理多个银行账户最好的程序</h1>
+                        <p class="leading-relaxed mb-10">
+                            该应用程序与主要银行机构合作，允许用户直接在应用程序中管理他们的银行账户。用户可以查看账户余额、交易记录和账单，进行转账和付款，并接收有关账户活动的实时通知。</p>
+                        <button class="btn">阅读更多</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="how-it-works" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4 text-2xl">如何开始使用？</h4>
+                    <h1 class="title">账户建立与管理</h1>
+                </div>
+
+                <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                    <!-- card 1 -->
+                    <div class="text-center cursor-pointer">
+                        <div
+                            class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                            <p
+                                class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line.png')] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">
+                                1</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">安装应用程序</h3>
+                        <p class="leading-relaxed">在您的移动设备的应用商店搜索"FinancePro"应用程序，找到应用程序并点击"安装"按钮。</p>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="text-center cursor-pointer">
+                        <div class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary">
+                            <p
+                                class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line-bottom.png')] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">
+                                2</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">建立个人资料</h3>
+                        <p class="leading-relaxed">输入您的个人信息，如姓名、电子邮件和联系电话，设置一个安全密码，以保护您的个人财务信息。</p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="text-center cursor-pointer">
+                        <div
+                            class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">享受应用功能</h3>
+                        <p class="leading-relaxed">开始跟踪和管理您的支出、收入和资产。您可以记录交易、查看图表和报告，以及设置预算目标。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">User Review</h4>
+                    <h1 class="title">What Clients Say About Our App After Use It</h1>
+                </div>
+
+                <!-- review container -->
+                <div class="mt-8">
+                    <div class="flex items-center justify-center flex-wrap">
+                        <img src="./img/user1.jpg" alt=""
+                            class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                            onclick="showReview()">
+                        <img src="./img/user2.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                            onclick="showReview()">
+                        <img src="./img/user3.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                            onclick="showReview()">
+                        <img src="./img/user4.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                            onclick="showReview()">
+                        <img src="./img/user5.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                            onclick="showReview()">
+                    </div>
+
+                    <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                        <div class="user-text active-text">
+                            <p class="md:text-2xl mb-6">
+                                App非常简单易用，界面设计直观，让我轻松上手。同时，它提供了丰富的功能，包括支出跟踪、预算管理和资产追踪等，满足了我对财务管理的各种需求。</p>
+                            <h4 class="font-bold text-color-secondary mb-1">杨子希</h4>
+                            <p>IOS developer</p>
+                        </div>
+
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">
+                                App生成的图表和报告，它们以直观的方式展示了我的财务状况。通过这些报告，我可以更好地了解我的支出模式、预算执行情况以及资产变化趋势，从而做出更明智的财务决策。</p>
+                            <h4 class="font-bold text-color-secondary mb-1">祁莲青</h4>
+                            <p>Flutter developer</p>
+                        </div>
+
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">App的提醒功能非常实用。它会及时提醒我超出预算、还有未支付账单等重要事项，帮助我时刻保持财务的控制和纪律性。</p>
+                            <h4 class="font-bold text-color-secondary mb-1">华熙</h4>
+                            <p>Android developer</p>
+                        </div>
+
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">App与银行账户的数据同步功能。它能够自动导入我的交易记录，省去了手动输入的麻烦，让财务管理更加便捷和准确。</p>
+                            <h4 class="font-bold text-color-secondary mb-1">米道</h4>
+                            <p>React developer</p>
+                        </div>
+
+                        <div class="user-text">
+                            <p class="md:text-2xl mb-6">
+                                App的安全性非常满意。它采用了高级加密技术，确保我的财务数据得到安全保护。我可以放心地将我的财务信息存储在这个App中，而不必担心泄露或被盗用。</p>
+                            <h4 class="font-bold text-color-secondary mb-1">薛子稻</h4>
+                            <p>Angular developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="pricing" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4 text-2xl">订阅价格</h4>
+                    <h1 class="title">匹配您的不同需求</h1>
+
+
+                    <!-- Rounded switch -->
+                    <div class="mt-5 flex items-center justify-center gap-4">
+                        <p>每月订阅</p>
+                        <label class="cursor-pointer relative inline-block w-20 h-8 rounded-full">
+                            <input type="checkbox" id="toggleBtn" class="peer opacity-0 w-0 h-0">
+                            <span
+                                class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"></span>
+                        </label>
+                        <p>每年订阅</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- card 1 -->
+                    <div class="card relative h-auto w-auto">
+                        <!-- front side -->
+                        <div id="card_1_front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    20 <span class="text-sm font-normal tracking-widest">/per month</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                <p class="leading-relaxed">使用Basic版，您可以轻松管理个人银行账户、设定预算和跟踪支出。您可以添加多个账户，并随时查看账户余额和交易历史。
+                                </p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">多储蓄账户管理</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">预算和支出跟踪</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">自定义账单提醒</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">资产智能分析</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">专业管家支持</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                        <!-- back side -->
+                        <div id="card_1_back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    120 <span class="text-sm font-normal tracking-widest">/per month</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                <p class="leading-relaxed">使用Basic版，您可以轻松管理个人银行账户、设定预算和跟踪支出。您可以添加多个账户，并随时查看账户余额和交易历史。
+                                </p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">多储蓄账户管理</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">预算和支出跟踪</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">自定义账单提醒</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">资产智能分析</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">专业管家支持</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="card relative h-auto w-auto">
+                        <!-- front side -->
+                        <div id="card_2_front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    50 <span class="text-sm font-normal tracking-widest">/per month</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Standard</h3>
+                                <p class="leading-relaxed">Standard版还具备账单支付和提醒功能。您可以在App中管理和支付各种账单，如水电费、信用卡账单、贷款还款等。</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">多储蓄账户管理</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">预算和支出跟踪</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">自定义账单提醒</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">资产智能分析</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">专业管家支持</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                        <!-- back side -->
+                        <div id="card_2_back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    150 <span class="text-sm font-normal tracking-widest">/per month</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Standard</h3>
+                                <p class="leading-relaxed">Standard版还具备账单支付和提醒功能。您可以在App中管理和支付各种账单，如水电费、信用卡账单、贷款还款等。</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">多储蓄账户管理</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">预算和支出跟踪</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">自定义账单提醒</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">资产智能分析</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">专业管家支持</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="card relative h-auto w-auto">
+                        <!-- front side -->
+                        <div id="card_3_front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    100<span class="text-sm font-normal tracking-widest">/per month</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Premium</h3>
+                                <p class="leading-relaxed">Premium版还提供更多的报告和分析选项，帮助您深入了解自己的财务状况，如资产组合分析、财务目标追踪等。</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">多储蓄账户管理</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">预算和支出跟踪</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">自定义账单提醒</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">资产智能分析</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">专业管家支持</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                        <!-- back side -->
+                        <div id="card_3_back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    500 <span class="text-sm font-normal tracking-widest">/per month</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Premium</h3>
+                                <p class="leading-relaxed">Premium版还提供更多的报告和分析选项，帮助您深入了解自己的财务状况，如资产组合分析、财务目标追踪等。</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">多储蓄账户管理</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">预算和支出跟踪</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">自定义账单提醒</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">资产智能分析</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">专业管家支持</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <section id="blog">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Innovation And Quality Improvement</h4>
+                    <h1 class="title">Latest Updates, Solutions And Company News</h1>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- card no 1 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/blog1.jpg" alt=""
+                                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 August 2023</p>
+                                <p>17 min read</p>
+                            </div>
+
+                            <a href="#blog"
+                                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">用React和Python实现的跨平台移动应用</a>
+
+                            <p class="leading-relaxed my-5">React
+                                Native允许我们使用JavaScript编写应用的前端界面，同时利用Python开发后端逻辑和数据处理。这种技术实现方式使得应用能够同时运行于iOS和Android平台，并且通过Python提供高效的数据处理和服务器端功能...
+                            </p>
+
+                            <a href="#blog"
+                                class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+                                <span class="tracking-wider capitalize underline hover:no-underline">Read More</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- card no 2 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/blog2.jpg" alt=""
+                                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 June 2023</p>
+                                <p>12 min read</p>
+                            </div>
+
+                            <a href="#blog"
+                                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">使用Angular和Java实现全栈开发</a>
+
+                            <p class="leading-relaxed my-5">
+                                另一种技术实现方案是使用Angular作为前端框架，与Python一起实现全栈开发。Angular提供了丰富的工具和功能，包括组件化开发、依赖注入和单向数据流等，使得前端开发更加高效和可维护。...
+                            </p>
+
+                            <a href="#blog"
+                                class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+                                <span class="tracking-wider capitalize underline hover:no-underline">Read More</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- card no 3 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/blog3.jpg" alt=""
+                                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-5 py-5">
+                                <p>20 September 2023</p>
+                                <p>10 min read</p>
+                            </div>
+
+                            <a href="#blog"
+                                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">React
+                                Native和C#实现跨平台应用</a>
+
+                            <p class="leading-relaxed my-5">使用React Native作为移动应用开发框架，结合Python作为后端语言。React
+                                Native允许使用JavaScript编写移动应用，并通过其内置的跨平台组件和API访问设备功能...</p>
+
+                            <a href="#blog"
+                                class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out">
+                                <span class="tracking-wider capitalize underline hover:no-underline">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="download-app" class="bg-color-primary-light">
+            <div class="container h-[80vh] grid place-items-center">
+                <div class="text-center md:w-2/3 m-auto">
+                    <h1 class="title text-color-secondary">从 官 方 商 店 快 速 获 得 应 用 程 序</h1>
+                    <p class="leading-relaxed pt-5">为众多长期投资者服务，在多个行业拥有丰富的经验和专业知识，您可以从下面的应用市场渠道获取。</p>
+
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10">
+                        <a href="#"
+                            class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70">
+                            <img src="./img/ios-store-dark.png" alt="">
+                        </a>
+                        <a href="#"
+                            class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70">
+                            <img src="./img/g-play-dark.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4 text-2xl">问题提交与招聘联系</h4>
+                    <h1 class="title">与我们快速取得联系</h1>
+                </div>
+
+                <form>
+                    <div class="w-full m-auto text-center md:w-2/3">
+                        <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                            <input type="text"
+                                class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                placeholder="Name">
+                            <input type="email"
+                                class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                placeholder="Email">
+                            <input type="tel"
+                                class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                placeholder="Phone">
+                            <input type="text"
+                                class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                                placeholder="Company">
+                        </div>
+
+                        <textarea rows="4"
+                            class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                            placeholder="Message"></textarea>
+
+                        <button class="btn mt-10">发送 信息</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="bg-color-primary-dark relative">
+                <div class="container py-10">
+                    <div class="grid gap-10 md:grid-cols-3 pb-10">
+                        <div class="space-y-6">
+                            <h4 class="font-bold text-lg">关于应用</h4>
+                            <p class="leading-relaxed">
+                                无论您是想更好地掌握支出、制定预算、跟踪资产、还是进行投资，OnlineBankApp都提供了一系列的功能和工具，让您能够轻松管理您的财务。</p>
+                            <div class="flex gap-5 items-center">
+                                <p>最新动态</p>
+                                <i class="fa-brands fa-facebook cursor-pointer hover:text-color-secondary"></i>
+                                <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+                                <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"></i>
+                                <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between md:justify-around">
+                            <div class="space-y-6">
+                                <h4 class="font-bold text-lg">Quick Links</h4>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#">主页</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#features">公司特色</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#testimonial">开发者介绍</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#pricing">订阅价格</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#blog">技术博客</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#contact">快速联系</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-6">
+                                <h4 class="font-bold text-lg">Help</h4>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#">关于我们</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#features">合作伙伴</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#testimonial">生涯</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#pricing">Reviews</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#blog">Terms & Conditions</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a
+                                            href="#contact">相关帮助</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="font-bold text-lg">新闻杂志</h4>
+                            <p class="leading-relaxed">使用电子邮件订阅，你会收到我们最新的技术新闻。</p>
+                            <div class="flex items-center">
+                                <input type="text"
+                                    class="w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none"
+                                    placeholder="Enter Your Email">
+                                <button type="submit"
+                                    class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center pt-10 border-t border-color-gray">
+                        <p>2023 &copy; OnlineBankAPP All Rights Reversed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        const navbar = document.querySelector('header');
+
+        const section = document.querySelectorAll('section');
+        const navlinks = document.querySelectorAll('nav ul li a');
+
+
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-color-primary-dark');
+                navbar.classList.add('border-b');
+                navbar.classList.add('border-color-gray');
+            } else {
+                navbar.classList.remove('bg-color-primary-dark');
+                navbar.classList.remove('border-b');
+                navbar.classList.remove('border-color-gray');
+            }
+
+            // avtive links
+
+            let current = 'home';
+
+            section.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            })
+
+            navlinks.forEach((item) => {
+                item.classList.remove('text-color-secondary');
+                if (item.href.includes(current)) {
+                    item.classList.add('text-color-secondary');
+                }
+            })
+
+        }
+
+        // Mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelectorAll('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+        // testtimonial
+        const userTexts = document.getElementsByClassName('user-text');
+        const userPics = document.getElementsByClassName('user-pic');
+        function showReview() {
+            for (userPic of userPics) {
+                userPic.classList.remove("active-pic");
+            }
+            for (userText of userTexts) {
+                userText.classList.remove("active-text");
+            }
+            let i = Array.from(userPics).indexOf(event.target);
+
+            userPics[i].classList.add('active-pic');
+            userTexts[i].classList.add('active-text');
+        }
+
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        const card_1_front = document.querySelector("#card_1_front");
+        const card_1_back = document.querySelector("#card_1_back");
+
+        const card_2_front = document.querySelector("#card_2_front");
+        const card_2_back = document.querySelector("#card_2_back");
+
+        const card_3_front = document.querySelector("#card_3_front");
+        const card_3_back = document.querySelector("#card_3_back");
+
+        toggleBtn.addEventListener('change', () => {
+            card_1_front.classList.toggle('-rotate-y-180');
+            card_1_back.classList.toggle('rotate-y-180');
+
+            card_2_front.classList.toggle('-rotate-y-180');
+            card_2_back.classList.toggle('rotate-y-180');
+
+            card_3_front.classList.toggle('-rotate-y-180');
+            card_3_back.classList.toggle('rotate-y-180');
+        })
+    </script>
+</body>
+
 </html>
