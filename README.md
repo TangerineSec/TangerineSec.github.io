@@ -61,3 +61,6 @@ npm run build
 现在，您已经成功地安装了并准备开始开发或部署。请根据您的需求进行相应的操作。
 
 如有任何问题或疑问，请查阅项目文档或与项目维护者我联系。
+
+项目预览：
+![1706047461321.png](https://githubwiki.oss-cn-shanghai.aliyuncs.com/img/typroa/1706047461321.png)
